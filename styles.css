@@ -1,0 +1,145 @@
+/* Estilos generales */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  --color-ppal: #3abef9;
+  --color-secondary: #3572ef;
+  --color-gray: #b4b4b8;
+  --color-gray-dark: #54575d;
+  --color-gray-btn: #777777;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(58, 58, 58, 0.885);
+}
+body {
+  background-color: #d1d1d1;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 40px;
+  margin: 50px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.container-toogle {
+  display: flex;
+  justify-content: flex-end;
+}
+#btn-toogle-theme {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  border: solid 1px #cecdcd;
+  cursor: pointer;
+}
+#btn-toogle-theme:hover {
+  color: white;
+  background-color: var(--color-gray-dark);
+}
+
+.dark-mode {
+  color: white;
+  background-color: var(--color-gray-dark);
+}
+
+h {
+  font-size: 1.9rem;
+  font-weight: bold;
+  margin: 25px 0;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.side-figure {
+  font-family: 'Poppins', sans-serif;
+  color: #3a3a3ae2;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 50px;
+  padding: 20px;
+  margin: 30px 20px 30px 0;
+  border-radius: 5px;
+  border: solid 1px #eaeaea;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+.side-figure:hover {
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.side-figure::placeholder {
+  color: gray; /* Cambia el color del texto del placeholder */
+  opacity: 0.4; /* Ajusta la opacidad del texto del placeholder */
+}
+.btn-calculo {
+  background-color: var(--color-ppal);
+  height: 50px;
+  width: 100px;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.btn-calculo:hover {
+  background-color: #00aefe;
+  outline: none;
+}
+
+.container-datos {
+  display: grid;
+  grid-template-columns: 2fr repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  grid-gap: 10px;
+  margin-bottom: 30px;
+  padding: 30px 20px 40px 20px;
+}
+
+.datos {
+  width: 80%;
+}
+
+footer {
+  position: inherit;
+  width: 100%; /* Establecemos el ancho del footer a la anchura de la pantalla */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #666;
+  bottom: 0;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 720px) {
+  main {
+    margin: 8px;
+    padding: 10px;
+  }
+  .container-new-task {
+    display: flex;
+    flex-direction: column;
+  }
+  .new-task {
+    display: block;
+  }
+}
