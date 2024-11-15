@@ -71,6 +71,10 @@ footer {
   margin-bottom: 30px;
 }
 
+.results {
+  color: var(--color-secondary);
+}
+
 @media (max-width: 720px) {
   main {
     margin: 8px;

@@ -1,9 +1,16 @@
 export class ThemeManager {
   constructor() {
-    this.theme = null;
+    // this.theme = null;
     this.mainElement = document.querySelector('main');
+    this.changeThemeButton = document.getElementById('btn-toogle-theme');
+    this.setupTheme();
+    this.loadTheme();
   }
-
+  setupTheme() {
+    this.changeThemeButton.addEventListener('click', () => {
+      this.toggleTheme();
+    });
+  }
   toggleTheme() {
     this.mainElement.classList.toggle('dark-mode');
 
@@ -13,7 +20,6 @@ export class ThemeManager {
     localStorage.setItem('theme', theme);
     this.theme = theme;
   }
-
   loadTheme() {
     if (localStorage.getItem('theme')) {
       this.theme = localStorage.getItem('theme');
@@ -24,7 +30,6 @@ export class ThemeManager {
       );
     }
   }
-
   getTheme() {
     return this.theme;
   }
