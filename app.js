@@ -108,20 +108,15 @@ console.log('Función cargada');
 // h = altura
 // A = área del triángulo
 // b = base (cualquier lado del triángulo que tomemos como base)
-// Para calcular el área (A), podemos usar la fórmula de Herón:
+// Para calcular el área (A), podemos usar la fórmula de Heron:
 
 // Primero calculamos el semiperímetro s = (a + b + c) / 2
 // Luego aplicamos la fórmula: A = √(s(s-a)(s-b)(s-c))
 
 window.triangleEscaleno = function (lado1, lado2, lado3) {
   if (lado1 !== lado2 && lado1 !== lado3 && lado2 !== lado3) {
-
-    const
-    const area = 
-
-
-    return 'es triangulo Escaleno';
+    console.log('es triangulo Escaleno');
   } else {
-    return false;
+    console.log('no es triangulo Escaleno');
   }
 };
