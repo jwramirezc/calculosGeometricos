@@ -1,7 +1,9 @@
+import { ErrorHandler } from './errorhandler.js';
+import { Circle, Square, Triangle } from './figures.js';
 import { ThemeManager } from './themeManager.js';
 import { ValidateData } from './validate.js';
-import { ErrorHandler } from './errorhandler.js';
-import { Square, Triangle, Circle } from './figures.js';
+
+// triangulo escaleno todo los lados son diferentes
 
 document.addEventListener('DOMContentLoaded', () => {
   const themeManager = new ThemeManager();
@@ -99,3 +101,27 @@ function alertError(tipoError) {
       break;
   }
 }
+
+console.log('Función cargada');
+
+//h = (2 × A) / b
+// h = altura
+// A = área del triángulo
+// b = base (cualquier lado del triángulo que tomemos como base)
+// Para calcular el área (A), podemos usar la fórmula de Herón:
+
+// Primero calculamos el semiperímetro s = (a + b + c) / 2
+// Luego aplicamos la fórmula: A = √(s(s-a)(s-b)(s-c))
+
+window.triangleEscaleno = function (lado1, lado2, lado3) {
+  if (lado1 !== lado2 && lado1 !== lado3 && lado2 !== lado3) {
+
+    const
+    const area = 
+
+
+    return 'es triangulo Escaleno';
+  } else {
+    return false;
+  }
+};
